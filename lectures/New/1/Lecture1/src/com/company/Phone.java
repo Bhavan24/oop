@@ -3,7 +3,9 @@ package com.company;
 public abstract class Phone {
     private int no;
     private String color;
-    public  abstract  void call(); //abstract method
+
+    public abstract void call(); //abstract method
+
     public abstract void msg(); // abstract method
 
     public int getNo() {
@@ -22,7 +24,7 @@ public abstract class Phone {
         this.color = color;
     }
 
-    public void sleep(){ //regular method
+    public void sleep() { //regular method
         System.out.println("sleep phone");
     }
 }

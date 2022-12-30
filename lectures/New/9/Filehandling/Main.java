@@ -1,6 +1,5 @@
 package com.company;
 
-
 import java.io.File;
 import java.io.IOException;
 
@@ -8,19 +7,19 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         //initialize in to a string variable
-        String filename= "new2.txt";
+        String filename = "new2.txt";
 
         //sending the file name or directory name to the file object
-        File f1=new File(filename);
+        File f1 = new File(filename);
         f1.createNewFile();
         //Directly uses file name
-        File f2=new File("new.txt");
+        File f2 = new File("new.txt");
         f2.createNewFile();
 
-        File f3=new File(f1,"new3.txt"); //parent // child
-        File f4= new File("C:\\test.txt");
+        File f3 = new File(f1, "new3.txt"); //parent // child
+        File f4 = new File("C:\\test.txt");
 
-       // Details from f1
+        // Details from f1
         System.out.println("File name : " + f1.getName()); //Returns the name of the file or directory
         System.out.println("Path : " + f1.getPath()); //Returns the  pathname
         System.out.println("Absolute path : " + f1.getAbsolutePath()); //Returns the absolute pathname
@@ -40,6 +39,6 @@ public class Main {
         System.out.println("Can Write: " + f3.canWrite());
 
         System.out.println("\n");
-        System.out.println("Parent of F4: "+f4.getParent());
+        System.out.println("Parent of F4: " + f4.getParent());
     }
 }

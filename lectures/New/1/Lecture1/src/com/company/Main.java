@@ -49,7 +49,7 @@ public class Main {
         System.out.println(c1 instanceof Parent);
         System.out.println(p1 instanceof Child);
 */
-        Samsung s= new Samsung();
+        Samsung s = new Samsung();
         s.call();
         s.setColor("red");
         System.out.println(s.getColor());
@@ -63,10 +63,6 @@ public class Main {
        };
        n.show();
 */
-
-
-
-
 
     }
 }

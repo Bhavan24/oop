@@ -1,6 +1,5 @@
 package com.company;
 
-public interface  charger
-{
-        void chargephone();
+public interface charger {
+    void chargephone();
 }

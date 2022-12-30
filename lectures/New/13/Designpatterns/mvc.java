@@ -1,25 +1,26 @@
 package com.company;
-class Dog{
+
+class Dog {
     public String name;
-   public int Age;
+    public int Age;
 
     public Dog(String name, int age) {
         this.name = name;
         Age = age;
     }
 
-    public void show(){
+    public void show() {
         System.out.println("Woof woof");
     }
 }
 
-class DogShow{
-    public void PrintDog(String name,int age){
-        System.out.println("Dog is "+name+" and age "+age);
+class DogShow {
+    public void PrintDog(String name, int age) {
+        System.out.println("Dog is " + name + " and age " + age);
     }
 }
 
-class DogContoller{
+class DogContoller {
     private Dog model;
     private DogShow view;
 
@@ -44,17 +45,17 @@ class DogContoller{
         model.Age = age;
     }
 
-    public void updateView(){
-        view.PrintDog(model.name,model.Age);
+    public void updateView() {
+        view.PrintDog(model.name, model.Age);
     }
 }
 
 public class mvc {
     public static void main(String[] args) {
-            Dog dg=new Dog("Bullet",5);
-            DogShow sh=new DogShow();
-             DogContoller ctrl=new DogContoller(dg,sh);
-             ctrl.updateView();
+        Dog dg = new Dog("Bullet", 5);
+        DogShow sh = new DogShow();
+        DogContoller ctrl = new DogContoller(dg, sh);
+        ctrl.updateView();
 
     }
 }

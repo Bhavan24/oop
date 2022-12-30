@@ -9,5 +9,4 @@ public class Child extends Parent {
         System.out.println("in child class - parameterized constructor");
     }
 
-
 }

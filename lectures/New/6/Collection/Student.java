@@ -5,18 +5,17 @@ public class Student implements Comparable<Student> {
     int marks;
     String name;
 
-    public Student(int age, String name,int marks) {
+    public Student(int age, String name, int marks) {
         this.age = age;
         this.marks = marks;
         this.name = name;
     }
 
-
     @Override
     public int compareTo(Student st) {
-        if(marks==st.marks)
+        if (marks == st.marks)
             return 0;
-        else if(marks>st.marks)
+        else if (marks > st.marks)
             return 1;
         else
             return -1;

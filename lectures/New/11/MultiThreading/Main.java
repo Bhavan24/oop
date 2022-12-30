@@ -11,14 +11,12 @@ public class Main {
 //        }
 
         //Using implementing Runnable
-        MyRunnable m=new MyRunnable();
-        Thread t=new Thread(m);
+        MyRunnable m = new MyRunnable();
+        Thread t = new Thread(m);
         t.start();
-        for (int i=0;i<10;i++){
-            System.out.println("Inside the main Thread "+i);
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Inside the main Thread " + i);
         }
-
-
 
     }
 }

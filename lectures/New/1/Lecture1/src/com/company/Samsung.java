@@ -1,7 +1,6 @@
 package com.company;
 
-public class Samsung extends Phone{
-
+public class Samsung extends Phone {
 
     @Override
     public void call() {

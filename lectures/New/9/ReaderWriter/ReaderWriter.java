@@ -5,16 +5,15 @@
  */
 
 /**
- *
  * @author Barbara
  */
+
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.BufferedWriter;
 import java.util.Scanner;
-
 
 public class ReaderWriter {
 
@@ -26,35 +25,35 @@ public class ReaderWriter {
         ReaderWriter readwrite = new ReaderWriter();
         Scanner sc = new Scanner(System.in);
         boolean exit = false;
-        while(!exit){
-        System.out.println("Menu:");
-        System.out.println("1 - Write Student to file");
-        System.out.println("2 - Read Student List from a file");
-        System.out.println("3 - Exit");
-        System.out.println("Enter your choice: ");
-        int m = sc.nextInt();
-        switch (m) {
-            case 1:
-               
-                System.out.println("Enter name Student :");
-                String name = sc.next();
-                System.out.println("Enter ID Student :");
-                int id = sc.nextInt();
-                System.out.println("Enter mark Student :");
-                int mark = sc.nextInt();
+        while (!exit) {
+            System.out.println("Menu:");
+            System.out.println("1 - Write Student to file");
+            System.out.println("2 - Read Student List from a file");
+            System.out.println("3 - Exit");
+            System.out.println("Enter your choice: ");
+            int m = sc.nextInt();
+            switch (m) {
+                case 1:
 
-                readwrite.inputStudent(name, id, mark);
+                    System.out.println("Enter name Student :");
+                    String name = sc.next();
+                    System.out.println("Enter ID Student :");
+                    int id = sc.nextInt();
+                    System.out.println("Enter mark Student :");
+                    int mark = sc.nextInt();
 
-                break;
-            case 2:
-                System.out.println("List student: ");
-                System.out.println("------------------" + "\n");
-                readwrite.loadListStudent();
-                break;
-            case 3:
-                exit = true;
-                break;
-        }
+                    readwrite.inputStudent(name, id, mark);
+
+                    break;
+                case 2:
+                    System.out.println("List student: ");
+                    System.out.println("------------------" + "\n");
+                    readwrite.loadListStudent();
+                    break;
+                case 3:
+                    exit = true;
+                    break;
+            }
         }
 
     }
@@ -65,7 +64,7 @@ public class ReaderWriter {
             //open
             FileWriter fw = new FileWriter("List", true);
             BufferedWriter bw = new BufferedWriter(fw);
-            
+
             //write
             bw.write("Name: " + name + "\n");
             bw.write("Id:" + id + "\n");
@@ -74,7 +73,7 @@ public class ReaderWriter {
 
             bw.flush();
             System.out.println("Done");
-            
+
             //close
             bw.close();
             fw.close();
@@ -89,7 +88,7 @@ public class ReaderWriter {
             //open
             FileReader fr = new FileReader("List");
             BufferedReader br = new BufferedReader(fr);
-            
+
             //read
             String data = "";
             while ((data = br.readLine()) != null) {

@@ -4,8 +4,11 @@ package com.company;
 interface Connection {
 
     public void open();
+
     public void close();
+
     public void log();
+
     public void update();
 }
 
@@ -15,6 +18,7 @@ class Accounting implements Connection {
     public void open() {
         System.out.println("open database for accounting");
     }
+
     @Override
     public void close() {
         System.out.println("close the database");
@@ -37,6 +41,7 @@ class Sales implements Connection {
     public void open() {
         System.out.println("open database for sales");
     }
+
     @Override
     public void close() {
         System.out.println("close the database");
@@ -60,6 +65,7 @@ class Management implements Connection {
     public void open() {
         System.out.println("open database for Management");
     }
+
     @Override
     public void close() {
         System.out.println("close the database");
@@ -94,31 +100,37 @@ class Controller {
     public void setAccountingConnection() {
         con = acct;
     }
+
     public void setSalesConnection() {
-        con  = sales;
+        con = sales;
     }
+
     public void setManagementConnection() {
-        con  = management;
+        con = management;
     }
+
     public void open() {
         con.open();
     }
+
     public void close() {
         con.close();
     }
+
     public void log() {
         con.log();
     }
+
     public void update() {
         con.update();
     }
-
 
 }
 
 class StatePatternDemo {
 
     Controller controller;
+
     StatePatternDemo(String con) {
         controller = new Controller();
         //the following trigger should be made by the user
@@ -135,8 +147,8 @@ class StatePatternDemo {
     }
 }
 
-    public class State {
-        public static void main(String[] args) {
-            StatePatternDemo st=new StatePatternDemo("accounting");
-        }
+public class State {
+    public static void main(String[] args) {
+        StatePatternDemo st = new StatePatternDemo("accounting");
+    }
 }

@@ -6,7 +6,6 @@
 package personproject;
 
 /**
- *
  * @author Barbara
  */
 public class Person {
@@ -16,35 +15,34 @@ public class Person {
     private Date dob;
 
     //constructors
-    public Person(){
-        name= "";
+    public Person() {
+        name = "";
         dob = null;
     }
+
     public Person(String n) {
         name = n;
     }
 
-    //methods
-     public void setName(String n){
-        name = n;
-    }
-    
     public String getName() {
         return name;
+    }
+
+    //methods
+    public void setName(String n) {
+        name = n;
     }
 
     public Date getDOB() {
         return dob;
     }
-    
-    public void setDOB(Date dob){
+
+    public void setDOB(Date dob) {
         this.dob = dob;
     }
-    
-    public String toString(){
+
+    public String toString() {
         return ("The name is " + name + " and the age is " + dob.getDate());
     }
-    
-    
 
 }

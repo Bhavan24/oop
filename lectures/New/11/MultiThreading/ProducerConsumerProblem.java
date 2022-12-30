@@ -4,8 +4,7 @@ import java.util.LinkedList;
 
 public class ProducerConsumerProblem {
     public static void main(String[] args)
-            throws InterruptedException
-    {
+            throws InterruptedException {
         // Object of a class that has both produce() 
         // and consume() methods 
         final PC pc = new PC();
@@ -13,12 +12,10 @@ public class ProducerConsumerProblem {
         // Create producer thread 
         Thread t1 = new Thread(new Runnable() {
             @Override
-            public void run()
-            {
+            public void run() {
                 try {
                     pc.produce();
-                }
-                catch (InterruptedException e) {
+                } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
@@ -27,12 +24,10 @@ public class ProducerConsumerProblem {
         // Create consumer thread 
         Thread t2 = new Thread(new Runnable() {
             @Override
-            public void run()
-            {
+            public void run() {
                 try {
                     pc.consume();
-                }
-                catch (InterruptedException e) {
+                } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
@@ -57,12 +52,10 @@ public class ProducerConsumerProblem {
         int capacity = 1;
 
         // Function called by producer thread 
-        public void produce() throws InterruptedException
-        {
+        public void produce() throws InterruptedException {
             int value = 0;
             while (true) {
-                synchronized (this)
-                {
+                synchronized (this) {
                     // producer thread waits while list 
                     // is full 
                     while (list.size() == capacity)
@@ -86,11 +79,9 @@ public class ProducerConsumerProblem {
         }
 
         // Function called by consumer thread 
-        public void consume() throws InterruptedException
-        {
+        public void consume() throws InterruptedException {
             while (true) {
-                synchronized (this)
-                {
+                synchronized (this) {
                     // consumer thread waits while list 
                     // is empty 
                     while (list.size() == 0)

@@ -4,9 +4,9 @@ package com.company;
 
 public class Circle {
 
+    private static int count = 0; //using static variable
     //Default Constructor
     private double radius = 0;
-    private static int count=0; //using static variable
 
     public Circle(double radius) {  // Parameterized Constructor
         this.setRadius(radius);
@@ -15,28 +15,27 @@ public class Circle {
     }
     //instance
 
-    public static int getCount(){
+    public static int getCount() {
         return count;
     }
-
 
     public double getRadius() {
         return radius;
     }
 
     public void setRadius(double radius) {
-        if (radius>0)
+        if (radius > 0)
             this.radius = radius;
         else
             throw new IllegalArgumentException("Radius must be greater than 0");
     }
 
     public double getArea() {
-        double area = Math.PI*radius*radius;
+        double area = Math.PI * radius * radius;
         return area;
     }
 
     public double getCircumference() {
-        return Math.PI*2*radius;
+        return Math.PI * 2 * radius;
     }
 }

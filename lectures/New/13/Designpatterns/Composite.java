@@ -11,7 +11,7 @@ class Employee {
     private List<Employee> subordinates;
 
     // constructor
-    public Employee(String name,String dept, int sal) {
+    public Employee(String name, String dept, int sal) {
         this.name = name;
         this.dept = dept;
         this.salary = sal;
@@ -26,26 +26,25 @@ class Employee {
         subordinates.remove(e);
     }
 
-    public List<Employee> getSubordinates(){
+    public List<Employee> getSubordinates() {
         return subordinates;
     }
 
-    public String toString(){
-        return ("Employee :[ Name : " + name + ", dept : " + dept + ", salary :" + salary+" ]");
+    public String toString() {
+        return ("Employee :[ Name : " + name + ", dept : " + dept + ", salary :" + salary + " ]");
     }
 }
 
-
 public class Composite {
     public static void main(String[] args) {
-        Employee CEO = new Employee("John","CEO", 30000);
-        Employee headSales = new Employee("Robert","Head Sales", 20000);
-        Employee headMarketing = new Employee("Michel","Head Marketing", 20000);
-        Employee clerk1 = new Employee("Laura","Marketing", 10000);
-        Employee clerk2 = new Employee("Bob","Marketing", 10000);
-        Employee salesExecutive1 = new Employee("Richard","Sales", 10000);
-        Employee salesExecutive2 = new Employee("Rob","Sales", 10000);
-        
+        Employee CEO = new Employee("John", "CEO", 30000);
+        Employee headSales = new Employee("Robert", "Head Sales", 20000);
+        Employee headMarketing = new Employee("Michel", "Head Marketing", 20000);
+        Employee clerk1 = new Employee("Laura", "Marketing", 10000);
+        Employee clerk2 = new Employee("Bob", "Marketing", 10000);
+        Employee salesExecutive1 = new Employee("Richard", "Sales", 10000);
+        Employee salesExecutive2 = new Employee("Rob", "Sales", 10000);
+
         CEO.add(headSales);
         CEO.add(headMarketing);
 

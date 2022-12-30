@@ -14,12 +14,12 @@ public class FileReaderExample {
 //        while (sc.hasNext()){
 //            System.out.println(sc.nextLine());
 
-            FileReader fr=new FileReader("new1.txt");
-            int i;
-            while((i=fr.read())!=-1)
-                System.out.print((char)i);
-            fr.close();
-        }
-
+        FileReader fr = new FileReader("new1.txt");
+        int i;
+        while ((i = fr.read()) != -1)
+            System.out.print((char) i);
+        fr.close();
     }
+
+}
 

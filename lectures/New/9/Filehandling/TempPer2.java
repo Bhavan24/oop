@@ -10,12 +10,11 @@ public class TempPer2 {
         ObjectInputStream objin = new ObjectInputStream(fin);
         ArrayList<Car> carread = new ArrayList<>();
 
-        while (true){
+        while (true) {
             try {
-                Car c= (Car) objin.readObject();
+                Car c = (Car) objin.readObject();
                 carread.add(c); //readed object -> arraylist
-            }
-            catch (IOException | ClassNotFoundException e){
+            } catch (IOException | ClassNotFoundException e) {
                 break;
             }
 

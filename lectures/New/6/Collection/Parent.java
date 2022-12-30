@@ -1,6 +1,6 @@
 package com.company;
 
-public class Parent implements Comparable{
+public class Parent implements Comparable {
     int a;
     int b;
     int c;
@@ -10,7 +10,6 @@ public class Parent implements Comparable{
         this.b = b;
         this.c = c;
     }
-
 
     @Override
     public int compareTo(Object o) {

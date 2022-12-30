@@ -10,8 +10,7 @@ public class Exceptionhandlingdemo {
         } catch (Exception e) {
             System.out.println("Exception Occured :");
             System.out.println(e);
-        }
-        finally {
+        } finally {
             System.out.println("Inside finally block");
         }
     }
