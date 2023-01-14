@@ -1,6 +1,8 @@
 .idea
 /out
+/lectures/videos
 
 *.iml
+*.mp4
 test.txt
 

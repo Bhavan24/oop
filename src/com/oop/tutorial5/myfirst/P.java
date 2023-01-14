@@ -3,8 +3,8 @@ package com.oop.tutorial5.myfirst;
 public class P {
     public double x;
     protected double y;
-    private double z;
     double w;
+    private double z;
 
     public void foo() {
         x = 2.1; // line 11

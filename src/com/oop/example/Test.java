@@ -1,6 +1,5 @@
 package com.oop.example;
 
-
 import com.oop.example.abstraction.Female;
 import com.oop.example.abstraction.Male;
 import com.oop.example.abstraction.interfaces.IFemale;

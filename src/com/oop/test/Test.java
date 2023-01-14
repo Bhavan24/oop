@@ -10,8 +10,8 @@ public class Test {
         dog.sound();
         dog.feed();
 
-//        Test test = new Test();
-//        test.week1();
+        //        Test test = new Test();
+        //        test.week1();
     }
 
     public void week1() {

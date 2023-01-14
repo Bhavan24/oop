@@ -42,6 +42,14 @@ public class Counter extends JFrame {
         btnCountReset.addActionListener(handler);
     }
 
+    public static void main(String[] args) {
+        Counter counter = new Counter();
+        counter.setTitle("My Counter");
+        counter.setVisible(true);
+        counter.setSize(600, 100);
+        counter.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+
     private class MyListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent evt) {
@@ -58,14 +66,6 @@ public class Counter extends JFrame {
 
             tfCount.setText(String.valueOf(count));
         }
-    }
-
-    public static void main(String[] args) {
-        Counter counter = new Counter();
-        counter.setTitle("My Counter");
-        counter.setVisible(true);
-        counter.setSize(600, 100);
-        counter.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
 }

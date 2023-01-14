@@ -51,7 +51,7 @@ public class CalculatorFrame extends JFrame {
     }
 
     private String[] getActionsArray() {
-        return new String[]{"+", "-", "Clear"};
+        return new String[]{ "+", "-", "Clear" };
     }
 
     private JPanel getCustomPanel(int rows, int cols) {

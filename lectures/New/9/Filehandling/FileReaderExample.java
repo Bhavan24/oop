@@ -9,10 +9,10 @@ import java.util.Scanner;
 public class FileReaderExample {
     public static void main(String[] args) throws IOException {
 
-//       File f=new File("new1.txt");
-//        Scanner sc = new Scanner(f);
-//        while (sc.hasNext()){
-//            System.out.println(sc.nextLine());
+        //       File f=new File("new1.txt");
+        //        Scanner sc = new Scanner(f);
+        //        while (sc.hasNext()){
+        //            System.out.println(sc.nextLine());
 
         FileReader fr = new FileReader("new1.txt");
         int i;

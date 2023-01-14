@@ -13,7 +13,7 @@ import javax.swing.table.AbstractTableModel;
  */
 public class PersonTableModel extends AbstractTableModel {
 
-    private String[] columnNames = {"Name", "Date of Birth", "Type"};
+    private String[] columnNames = { "Name", "Date of Birth", "Type" };
     private ArrayList<Person> list;
 
     public PersonTableModel(ArrayList<Person> personList) {
@@ -52,13 +52,13 @@ public class PersonTableModel extends AbstractTableModel {
         return columnNames[col];
     }
 
-//   public Class getColumnClass(int col) { 
-//      if (col == 2) { 
-//         return Double.class; 
-//      } 
-//      else { 
-//         return String.class; 
-//      } 
-//   } 
+    //   public Class getColumnClass(int col) {
+    //      if (col == 2) {
+    //         return Double.class;
+    //      }
+    //      else {
+    //         return String.class;
+    //      }
+    //   }
 
 }
