@@ -19,7 +19,7 @@ class Cat {
     public Cat create() {
         Cat c = new Cat("Brown");
         System.out.println("\nInside Cat.create(), address of created " +
-                " cat object c is: " + c);
+            " cat object c is: " + c);
         return c;
     }
 }

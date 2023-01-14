@@ -46,7 +46,7 @@ class Account {
         } else {
             this.balance += amount;
             System.out.println("Deposit" + amount + "in thread"
-                    + Thread.currentThread().getId() + ", balance is " + balance);
+                + Thread.currentThread().getId() + ", balance is " + balance);
         }
     }
 
@@ -56,7 +56,7 @@ class Account {
         } else {
             this.balance -= amount;
             System.out.println("Withdraw" + amount + " in thread "
-                    + Thread.currentThread().getId() + ", balance is " + balance);
+                + Thread.currentThread().getId() + ", balance is " + balance);
         }
     }
 }//end Account class

@@ -1,7 +1,7 @@
 package com.oop.tutorial5.cards;
 
 public abstract class Card {
-    private String name;
+    private final String name;
 
     public Card() {
         name = "";

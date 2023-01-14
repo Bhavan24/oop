@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class ProducerConsumerProblem {
     public static void main(String[] args)
-            throws InterruptedException {
+        throws InterruptedException {
         // Object of a class that has both produce() 
         // and consume() methods 
         final PC pc = new PC();
@@ -62,7 +62,7 @@ public class ProducerConsumerProblem {
                         wait();
 
                     System.out.println("Producer produced-"
-                            + value);
+                        + value);
 
                     // to insert the jobs in the list 
                     list.add(value++);

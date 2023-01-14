@@ -5,7 +5,7 @@ public class ReferencesAssignment {
     public static void main(String[] args) {
         String x = "abc";
         String y = x;
-        y = new String("123");
+        y = "123";
         String z = x;
         y = x;
         z = "456";

@@ -14,7 +14,7 @@ public class BookTableModel extends AbstractTableModel {
 
     //properties
     private ArrayList<Book> myList;
-    private String[] columnNames = { "Title", " Author", "Price" };
+    private String[] columnNames = {"Title", " Author", "Price"};
 
     //contructor
     public BookTableModel(ArrayList<Book> list) {

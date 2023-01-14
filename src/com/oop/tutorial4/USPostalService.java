@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class USPostalService {
 
-    static String[] digits = { "11000", "00011", "00101", "00110", "01001", "01010", "01100", "10001", "10010", "10100" };
+    static String[] digits = {"11000", "00011", "00101", "00110", "01001", "01010", "01100", "10001", "10010", "10100"};
     static int multipleValue = 10;
 
     public static void main(String[] args) {

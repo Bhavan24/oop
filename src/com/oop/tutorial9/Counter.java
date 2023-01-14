@@ -9,15 +9,15 @@ public class Counter extends JFrame {
 
     private int count = 0;
 
-    private JLabel lblCount;
-    private JTextField tfCount;
-    private JButton btnCountUp;
-    private JButton btnCountDown;
-    private JButton btnCountReset;
+    private final JLabel lblCount;
+    private final JTextField tfCount;
+    private final JButton btnCountUp;
+    private final JButton btnCountDown;
+    private final JButton btnCountReset;
 
-    private String countUpLbl = "Count Up";
-    private String countDownLbl = "Count down";
-    private String countResetLbl = "Reset";
+    private final String countUpLbl = "Count Up";
+    private final String countDownLbl = "Count down";
+    private final String countResetLbl = "Reset";
 
     public Counter() {
         Container cp = getContentPane();

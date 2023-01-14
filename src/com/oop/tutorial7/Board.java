@@ -3,7 +3,7 @@ package com.oop.tutorial7;
 import java.util.Random;
 
 public class Board {
-    int ar[][];
+    int[][] ar;
 
     // creates a nxn size board
     public Board(int n) {

@@ -1,7 +1,7 @@
 package com.oop.tutorial6;
 
 class Book {
-    private int pages; // number of pages in the book
+    private final int pages; // number of pages in the book
 
     Book(int pages) {
         this.pages = pages;
@@ -13,7 +13,7 @@ class Book {
 }
 
 class Dictionary extends Book {
-    private int words; // number of words in the dictionary
+    private final int words; // number of words in the dictionary
 
     Dictionary(int words, int pages) {
         super(pages);

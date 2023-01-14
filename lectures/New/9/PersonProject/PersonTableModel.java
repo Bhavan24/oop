@@ -13,7 +13,7 @@ import javax.swing.table.AbstractTableModel;
  */
 public class PersonTableModel extends AbstractTableModel {
 
-    private String[] columnNames = { "Name", "Date of Birth", "Type" };
+    private String[] columnNames = {"Name", "Date of Birth", "Type"};
     private ArrayList<Person> list;
 
     public PersonTableModel(ArrayList<Person> personList) {

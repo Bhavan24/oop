@@ -1,9 +1,9 @@
 package com.oop.tutorial4;
 
 public class Car {
-    private String licensePlate;
-    private double speed; // kilometers per hour
-    private double maxSpeed; // kilometers per hour
+    private final String licensePlate;
+    private final double speed; // kilometers per hour
+    private final double maxSpeed; // kilometers per hour
 
     // constructors
     public Car(String licensePlate1, double maxSpeed1) {
@@ -25,9 +25,9 @@ public class Car {
     @Override
     public String toString() {
         return "Car{" +
-                "licensePlate='" + licensePlate + '\'' +
-                ", speed=" + speed +
-                ", maxSpeed=" + maxSpeed +
-                '}';
+            "licensePlate='" + licensePlate + '\'' +
+            ", speed=" + speed +
+            ", maxSpeed=" + maxSpeed +
+            '}';
     }
 }

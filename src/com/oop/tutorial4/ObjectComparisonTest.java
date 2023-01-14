@@ -1,7 +1,7 @@
 package com.oop.tutorial4;
 
 class MyInteger {
-    private int i;
+    private final int i;
 
     // constructor
     public MyInteger(int m) {
@@ -23,8 +23,8 @@ public class ObjectComparisonTest {
         else
             System.out.println("g1.equals(g2) evaluates: false");
         System.out.println(); // print an extra newline
-        String h1 = new String("cat");
-        String h2 = new String("cat");
+        String h1 = "cat";
+        String h2 = "cat";
         if (h1 == h2)
             System.out.println("h1 == h2 evaluates: true");
         else

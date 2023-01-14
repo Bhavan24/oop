@@ -1,8 +1,8 @@
 package com.oop.tutorial5.cards;
 
 public class CreditCard extends Card {
-    private int pinNumber;
-    private int number;
+    private final int pinNumber;
+    private final int number;
 
     public CreditCard(String n, int pinNumber, int number) {
         super(n);

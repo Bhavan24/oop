@@ -19,9 +19,9 @@ public class Car implements Serializable {
     @Override
     public String toString() {
         return "Car{" +
-                "weight=" + weight +
-                ", Height=" + Height +
-                ", Model='" + Model + '\'' +
-                '}';
+            "weight=" + weight +
+            ", Height=" + Height +
+            ", Model='" + Model + '\'' +
+            '}';
     }
 }

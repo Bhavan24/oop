@@ -42,7 +42,7 @@ public class Test {
     public void referencesAssignment() {
         String x = "abc";
         String y = x;
-        y = new String("123");
+        y = "123";
         String z = x;
         y = x;
         z = "456";
